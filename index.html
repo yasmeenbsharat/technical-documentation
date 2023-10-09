@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="Mary's simple recipe for maple bacon donuts
+            makes a sticky, sweet treat with just a hint
+            of salt that you'll keep coming back for."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  />
+  <!-- font awesome   -->
+  <link rel="stylesheet" href="vendor/css/all.min.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="row">
+    <div class="col-md-2 bg-gray vh-100 ">
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse ">
+        <div class="position-sticky sticky-top bg-dark-subtle">
+          <div class="list-group list-group-flush mx-3 mt-4">
+            <!-- Collapse 1 -->
+            <a mt-3
+              class="list-group-item  py-2 ripple bg-gray"
+              aria-current="true"
+              data-mdb-toggle="collapse"
+              href="#collapseExample1"
+              aria-expanded="true"
+              aria-controls="collapseExample1"
+            >
+            <span class="fs-5 fw-bold ">C# Tutorial </span>
+            </a>
+            <!-- Collapsed content -->
+            <ul id="collapseExample1" class="collapse show list-group list-group-flush">
+              <li class="list-group-item py-1 mt-3">
+                <a href="#introduction" >Introduction</a>
+              </li>
+              <li class="list-group-item py-1 mt-3">
+                <a href="#syntax">Syntax</a>
+              </li>
+              <li class="list-group-item py-1 mt-3">
+                <a href="#data_Types">Data Types</a>
+              </li>
+              <li class="list-group-item py-1 mt-3">
+                <a  href="#variables">Variables</a>
+              </li>
+              <li class="list-group-item py-1 mt-3">
+                <a  href="#type_Casting">Type Casting</a>
+              </li>
+              <li class="list-group-item py-1 mt-3">
+                <a   href="#user_Input">User Input</a>
+              </li>
+              <li class="list-group-item py-1 mt-3">
+                <a  href="#booleans">Booleans</a>
+              </li>
+            </ul>
+            <!-- Collapse 1 -->
+    
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="col-md-10 mt-5">
+          <section class="introduction ms-2" id="introduction">
+            <div class="title">
+                <h6 class="fw-bold border-bottom border-bottom-1 border-dark  pb-1 d-inline-block ">Introduction</h6>
+            </div>
+            <div class="desc">
+                <p>C# is a programming language developed by Microsoft.</p>
+                <p>C# is used in many fields , Some of them are:-</p>
+               <div class="bg-gray ms-3 mt-3 p-3 w-25 mb-3">
+                <ol class="bg-gray ">
+                    <li>Desktop App Development</li>
+                    <li>Mobile App Development</li>
+                    <li>Game Development</li>
+                    <li>Backend Web Development</li>
+                </ol>
+            </div>
+            <p>C# is one of the most popular programming languages , Because:-</p>
+            <div class="bg-gray ms-3 mt-3 p-3 w-50">
+            <ul>
+                <li>It is a programming language developed by Microsoft</li>
+                <li>It is a high-level programming language which is easy to learn</li>
+                <li>It is more secure than many programming languages</li>
+                <li>It is close to C , C++ and Java ... It is easy for programmers to switch to C# or vice versa</li>
+            </ul>
+            </div>
+              </div>
+        </section>
+        <section class="syntax ms-2 mt-5" id="syntax">
+          <div class="title  mt-2">
+              <h6 class="fw-bold border-bottom border-bottom-1 border-dark  pb-1 d-inline-block ">Syntax</h6>
+          </div>
+          <p>Syntax is the structure of statements , Here is a simple program typed in C# to discuss the meaning of syntax</p>
+          <div class="desc w-50 overflow-hidden bg-black text link-light">
+            <div class="copy-icon mt-3 my-1 me-2 " onclick ='copyToClipboard()' id="copyButton"><i class="fa-solid fa-copy text-end d-block fs-5  " ></i></div>
+         
+            <pre>
+              <code  id="code">using System;
+              
+              class Program
+              {
+                  static void Main()
+                  {
+                      Console.WriteLine("Hello, world!");
+                  }
+              }</code>
+              </pre>
+              
+            </div>
+      </section>
+    <section class="ms-2 mt-4" id="data_Types">
+      <div class="title">
+        <h6 class="fw-bold border-bottom border-bottom-1 border-dark  pb-1 d-inline-block ">Data Types</h6>
+    </div>
+    <div class="desc">
+      <p>Some data types that are supported by C# :-</p>
+      <div class="bg-gray ms-3 mt-3 p-3 w-50 mb-3">
+            <ol>
+                <li>integer (int) ... 1 , 500 , -200</li>
+                <li>double (double) ... 0.5 , 3.14 , -2.5</li>
+                <li>string (string) ... "AAA" , "What is your name ?"</li>
+                <li>character (char) ... 'A' , '+' , '5'</li>
+                <li>boolean (bool) ... true , false</li>  </ol>
+    </div>
+      </div> 
+    </section>
+        <section class="variables ms-2 mt-5" id="variables">
+          <div class="title  mt-2">
+              <h6 class="fw-bold border-bottom border-bottom-1 border-dark  pb-1 d-inline-block ">Variables</h6>
+          </div>
+          <p> Variables are containers for storing data values.</p>
+          <p>The syntax for declaring a variable and assigning a value to it is as following : </p>
+          <div class="desc w-50 overflow-hidden bg-black text link-light mb-2">
+            <div class="copy-icon mt-3 my-1 me-2 " onclick ='copyToClipboard()' id="copyButton"><i class="fa-solid fa-copy text-end d-block fs-5 "></i></div>
+         
+            <pre class="m-0 p-0">
+              <code id="code"> data-type variable-name = value(data) ;</code>
+              </pre>
+            </div>
+
+            <p>For example :-</p>
+            <div class="desc w-50 overflow-hidden bg-black text link-light mb-2">
+              <div class="copy-icon mt-3 my-1 me-2  " onclick ='copyToClipboard()' id="copyButton"><i class="fa-solid fa-copy text-end d-block fs-5 "></i></div>
+
+              <pre class="m-0 p-0">
+               <code id="code">int age = 20 ;
+                  string FirstName = "AAA" ;
+                  string full_name = "AAA BBB" ;
+                  double _degree = 80.5 ;
+                  char grade = 'A' ;
+                  bool student = true ;
+                  bool male = true ;</code></pre>
+              
+              </div>
+      </section>
+      <section class=" ms-2 mt-5" id="type_Casting">
+        <div class="title  mt-2">
+            <h6 class="fw-bold border-bottom border-bottom-1 border-dark  pb-1 d-inline-block ">Type Casting</h6>
+        </div>
+        <p>Type casting means turning a certain data from a type to another one.</p>
+        <p>Syntax for type casting is :-</p>
+        <div class="desc w-50 overflow-hidden bg-black text link-light mb-2">
+          <div class="copy-copy-icon mt-3 my-1 me-2 " onclick ='copyToClipboard()' id="copyButton"><i class="fa-solid fa-copy text-end d-block fs-5 "></i></div>
+       
+          <pre class="m-0 p-0">
+            <code id="code"> (data-type) data ;</code>
+            </pre>
+          </div>
+
+          <p>For example :-</p>
+          <div class="desc w-50 overflow-hidden bg-black text link-light mb-2">
+            <div class="copy-copy-icon mt-3 my-1 me-2  " onclick ='copyToClipboard()' id="copyButton"><i class="fa-solid fa-copy text-end d-block fs-5 "></i></div>
+
+            <pre class="m-0 p-0">
+             <code id="code">double pi = 3.14 ;
+              int myInt = (int) pi ;
+              Console.WriteLine(pi) ; // 3.14
+              Console.WriteLine(myInt) ; // 3</code></pre>
+            
+            </div>
+    </section>
+    <section class=" ms-2 mt-5" id="user_Input">
+      <div class="title  mt-2">
+          <h6 class="fw-bold border-bottom border-bottom-1 border-dark  pb-1 d-inline-block ">User Input</h6>
+      </div>
+      <p>You already know that Console.WriteLine() is used to output text.</p>
+      <p>Now you are going to learn how to use Console.ReadLine() to get user input.</p>
+      <div class="desc w-50 overflow-hidden bg-black text link-light mb-2">
+        <div class="copy-icon mt-3 my-1 me-2  " onclick ='copyToClipboard()' id="copyButton"><i class="fa-solid fa-copy text-end d-block fs-5 "></i></div>
+     
+        <pre class="m-0 p-0">
+          <code id="code"> Console.ReadLine();</code>
+          </pre>
+        </div>
+
+        <p>For example :-</p>
+        <div class="desc w-50 overflow-hidden bg-black text link-light mb-2">
+          <div class="copy-icon mt-3 my-1 me-2 " onclick ='copyToClipboard()' id="copyButton"><i class="fa-solid fa-copy text-end d-block fs-5 "></i></div>
+
+          <pre class="mb-1 p-0">
+           <code id="code">int age ;
+            Console.Write("Enter your age:") ;
+            age = Console.ReadLine() ;
+            Console.WriteLine("You are " + age + " years old") ;</code></pre>
+          
+          </div>
+  </section>
+  <section class="syntax ms-2 mt-5" id="booleans">
+    <div class="title  mt-2">
+        <h6 class="fw-bold border-bottom border-bottom-1 border-dark  pb-1 d-inline-block ">Booleans</h6>
+    </div>
+    <p>Booleans are data types that can be used to control whether something is true or false(yes or no / on or
+      off).</p>
+    <div class="desc w-50 overflow-hidden bg-black text link-light">
+      <div class="copy-icon mt-3 my-1 me-2 " onclick ='copyToClipboard()' id="copyButton"><i class="fa-solid fa-copy text-end d-block fs-5  " ></i></div>
+   
+      <pre>
+        <code  id="code">ubool male = true ;
+          bool student = true ;
+          bool permission_accepted = false ;</code>
+        </pre>
+        
+      </div>
+</section>
+
+    </div>
+
+
+    </div>
+      <!-- Sidebar -->
+      <script src="assets/js/main.js"></script>
+</body>
+</html>

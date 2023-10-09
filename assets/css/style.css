@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;300&display=swap');
+a{   text-decoration: none;
+}
+.bg-gray{
+ background-color:  #c7c7c7;
+ }
+.sidebar ul li{
+    color: black;
+    background-color: #e2e2e2  !important;
+}
+
+ul li a{
+    color: black;
+}
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Martian Mono', monospace;
+}
+p ,ul ,ol{
+    margin: 0 0  7px 0;
+    line-height: -2px;
+    font-size: 12px;
+}
+.variables desc{
+   height: fit-content;
+}
+
+/* .copy-icon:before{
+    content: "copied";
+    position: absolute;
+    z-index: 333;
+    color: black;
+    top: 34px;
+    right: -11px;
+    font-size: 15px;
+    background-color: #fff;
+    display: none;
+    border-radius:20px ;
+    padding: 8px 10px;
+}
+.copy-icon::after{
+    content: " ";
+    position: absolute;
+    top: 15px;
+    right: 6px;
+    border-bottom: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+   display: none;
+}
+.copy-icon .active:before ,.copy-icon .active::after{
+ display: block;
+} */
