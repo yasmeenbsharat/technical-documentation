@@ -1,11 +1,7 @@
-
-// const copyButton = document.getElementById("copyButton");
-// const codeElement = document.getElementById("code");
-function copyToClipboard() {
-    const copyButton = document.getElementById("copyButton");
-    const codeElement = document.getElementById("code");
+function copyToClipboard(event) {
+    const copyIcon = event.currentTarget;
+    const codeElement = copyIcon.nextElementSibling.querySelector("code");
     const textToCopy = codeElement.innerText;
-    console.log("yyyyyyyyyyyyyyyy");
 
     const tempTextarea = document.createElement("textarea");
     tempTextarea.value = textToCopy;
@@ -14,9 +10,9 @@ function copyToClipboard() {
     document.execCommand("copy");
     document.body.removeChild(tempTextarea);
 
-    copyButton.innerHTML = '<i class="fa-solid fa-clipboard-check d-block fs-6 text-end "> <span> Copy to Clipboard! </span></i>';
+    copyIcon.innerHTML = '<i class="fa-solid fa-clipboard-check d-block fs-6 text-end "> <span> Copy to Clipboard! </span></i>';
 
     setTimeout(() => {
-        copyButton.innerHTML = '<i class="fa-solid fa-copy text-end d-block fs-5"> </i>';
+        copyIcon.innerHTML = '<i class="fa-solid fa-copy text-end d-block fs-5"> </i>';
     }, 1000);
 }

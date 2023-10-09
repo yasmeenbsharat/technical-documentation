@@ -28,31 +28,3 @@ p ,ul ,ol{
 .variables desc{
    height: fit-content;
 }
-
-/* .copy-icon:before{
-    content: "copied";
-    position: absolute;
-    z-index: 333;
-    color: black;
-    top: 34px;
-    right: -11px;
-    font-size: 15px;
-    background-color: #fff;
-    display: none;
-    border-radius:20px ;
-    padding: 8px 10px;
-}
-.copy-icon::after{
-    content: " ";
-    position: absolute;
-    top: 15px;
-    right: 6px;
-    border-bottom: 10px solid #fff;
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-   display: none;
-}
-.copy-icon .active:before ,.copy-icon .active::after{
- display: block;
-} */
